@@ -1,12 +1,10 @@
 import React from "react";
-import { Container, Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import {  Heading, Text } from "@chakra-ui/react";
 import styled from "styled-components";
-import { LeftChart, Linedemo } from "./LeftChart";
+import { LeftChart, } from "./LeftChart";
 const LeftDiv = styled.div`
   .top {
     border-right: 2px solid lightgray;
-    /* height: 500px;
-    width:450px; */
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -16,12 +14,9 @@ const LeftDiv = styled.div`
   .div1 {
     width: 100%;
     text-align: center;
-    /* border: 1px solid red; */
   }
   .leftchart {
     border: 1px solid grey;
-    /* width: 80%;
-    height: 300px; */
     color: transparent;
   }
 `;

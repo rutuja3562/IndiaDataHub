@@ -17,10 +17,12 @@ export const Home = () => {
   return (
     <Container
       position={"relative"}
-      border={"0px solid teal"}
+      border={"1px solid teal"}
       maxW="100%"
+      height={"830px"}
       overflow="hidden"
       bg={"#f6f6f6"}
+      paddingBottom="20px"
     >
       <Box
         position="absolute"
@@ -29,6 +31,15 @@ export const Home = () => {
         width={"135px"}
         height="145px"
         borderRadius={"0 0 50% 50%/0 0 100% 100%"}
+        bg="#97e2e7"
+      ></Box>
+      <Box
+        position="absolute"
+        top={"650"}
+        right={"-75"}
+        width={"230px"}
+        height="230px"
+        borderRadius={"80% 0% 0% 0% "}
         bg="#97e2e7"
       ></Box>
       <Flex ml={"10"} mt="5">
@@ -56,15 +67,14 @@ export const Home = () => {
           <Image h="140px" w="140px" src={img4}></Image>
         </Flex>
       </Flex>
-      <Flex justifyContent={"space-between"}>
+      <Flex justifyContent={"space-between"}  mt={"50px"}>
         <Box width={"35%"} borderRight={""}>
           <ContainerLeft />
         </Box>
         <Box width={"65%"}>
-          <ContainerRight  />
+          <ContainerRight />
         </Box>
       </Flex>
-    
     </Container>
   );
 };

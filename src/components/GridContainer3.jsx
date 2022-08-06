@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   Chart as ChartJS,
@@ -11,7 +10,6 @@ import {
   Legend,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
-// import faker from 'faker';
 
 ChartJS.register(
   CategoryScale,
@@ -25,34 +23,22 @@ ChartJS.register(
 
 export const options = {
   responsive: true,
-  // plugins: {
-    // legend: {
-    //   position: 'top' as const,
-    // },
-    title: {
-      display: true,
-    
-    },
-  // },
-
 };
 
-const labels = [,2014,2016,2018,2020,2022];
+const labels = [, 2017, 2018, 2019, 2020, 2021, 2022];
 
 export const data = {
   labels,
   datasets: [
     {
-      data: [0, 2.2, 4.4, 6.5, 8.8, 10.2,],
-      // fill: "rgb(75, 192, 192)",
-      fill:true,
+      data: [0, 38, 55, 58, 40, 43, 61],
+      fill: true,
       borderColor: "rgb(75, 192, 192)",
-      tension: 0.3,
       backgroundColor: "rgba(151, 187, 205, 0.2)",
     },
   ],
 };
 
-  export const LeftChart = () => {
-    return <Line options={options} data={data}  height={"410px"} width={"300px"}/>;
-  };
+export const GridContainer3 = () => {
+  return <Line options={options} data={data} />;
+};
